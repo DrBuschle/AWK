@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+# Filter for occurance of a name with grep and then by a value with awk
+
+
+cat Your_File.extension | grep 'Your_Pattern'| awk '$2 > 100' > Your_Filtered_File.extension
+
