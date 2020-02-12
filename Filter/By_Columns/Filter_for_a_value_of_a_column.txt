@@ -1,0 +1,10 @@
+#!/usr/bin/awk -f
+
+# Filter a file for a value in a column and get back the complete row, 
+	in which the condition in your column is fulfilled
+
+
+cat Your_File.extension | awk '$2 > 100' > Your_Filtered_File.extension
+
+
+# gets you all the lines of a file, in which column 2 has a value higher 100
