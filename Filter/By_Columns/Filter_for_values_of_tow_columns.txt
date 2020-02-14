@@ -1,0 +1,7 @@
+#!/usr/bin/awk -f
+
+# Filter a file for two columns and get back all the row of the two columns
+
+
+awk '{print $1 "\t" $2}' Your_File.extension > Your_Filtered_File.extension
+

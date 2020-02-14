@@ -6,5 +6,9 @@
 
 cat Your_File.extension | awk '$2 > 100' > Your_Filtered_File.extension
 
+# or
 
-# gets you all the lines of a file, in which column 2 has a value higher 100
+awk '{print $2 > 100}' Your_File.extension > Your_Filtered_File.extension
+
+
+# both gets you all the lines of a file, in which column 2 has a value higher 100
