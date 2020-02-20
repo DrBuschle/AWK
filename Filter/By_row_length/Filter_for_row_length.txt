@@ -1,0 +1,9 @@
+#!/usr/bin/awk -f
+
+# Filter a file for all row, which have more than x characters per row 
+
+
+awk 'length($0) > Your_Threshold' Your_File.extension > Your_Filtered_File.extension
+
+
+# $0 refers to all the columns in your file
